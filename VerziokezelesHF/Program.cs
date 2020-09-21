@@ -19,6 +19,8 @@ namespace VerziokezelesHF
 
             Console.WriteLine("Ez egy szám bekérös program");
             int szamindex = 10;
+            Console.WriteLine("adja meg hány számot szeretne meg adni");
+            szamindex= Convert.ToInt32(Console.ReadLine()); 
             int[] szambe = new int[szamindex];
             for (int i = 0; i < szamindex; i++)
             {
