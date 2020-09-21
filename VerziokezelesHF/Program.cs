@@ -17,11 +17,19 @@ namespace VerziokezelesHF
             //A részfeladatok külön commitban szerepeljenek! Vagyis:
 
 
+            Console.WriteLine("Ez egy szám bekérös program");
+            int szamindex = 10;
+            int[] szambe = new int[szamindex];
+            for (int i = 0; i < szamindex; i++)
+            {
+                Console.WriteLine("adja meg az " + (i+1) + ". számot");
+                szambe[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine(szambe.Average());
 
 
 
-
-
+            Console.ReadKey();
         }
     }
 }
