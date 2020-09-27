@@ -27,8 +27,27 @@ namespace VerziokezelesHF
                 Console.WriteLine("adja meg az " + (i+1) + ". számot");
                 szambe[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Console.WriteLine(szambe.Average());
 
+
+            int minimum=szambe[1];
+            int maximum=szambe[1];
+
+            for (int i = 0; i < szamindex; i++)
+            {
+                if (szambe[i]<minimum)
+                {
+                    minimum = szambe[i];
+                }
+                if (szambe[i]>maximum)
+                {
+                    maximum = szambe[i];
+                }
+            }
+
+
+            Console.WriteLine(szambe.Average());
+            Console.WriteLine("maximum:"+maximum);
+            Console.WriteLine("minimum:"+minimum);
 
 
             Console.ReadKey();
